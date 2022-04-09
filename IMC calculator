@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+  //Código feito em português
+	/* Construir um algoritmo que calcule o peso ideal
+de uma pessoa, de acordo com o seu gênero e
+altura, utilizando as seguintes fórmulas:
+para homens: (72.7*h)-58
+para mulheres: (62.1*h)-44.7
+*/
+
+//Declarar variáveis: genero - g, altura - h;
+int g;
+float h;
+
+//Recolher dados
+printf("por favor, digite seu genero. Para 1-feminino, para 2-masculino:  \n");
+scanf("%d", &g);
+printf("genero selecionado: %d \n", g);
+printf("por favor, digite sua altura:  \n");
+scanf("%f", &h);
+printf("altura registrada: %.2f \n", h);
+
+//Calcular
+if(g==1){
+	printf("peso ideal = %f", (62.1*h)-44.7);
+}
+	else{
+		if(g==2){
+			printf("peso ideal = %.2f", (72.7*h)-58);
+		}
+	}
+	
+	return 0;
+}
