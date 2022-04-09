@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+  //Código feito em português
+	/*Elabore um algoritmo que, dada a idade de um
+nadador, classifique-o em uma das seguintes
+categorias: infantil A 0 - 4 anos, infantl B 5 - 7 anos, infantil C 8 - 10 anos, juvenil A 11 - 13 anos, juvenil B 14 - 17 anos, adulto > 18.*/
+
+//Declarar variáveis: idade - i.
+int i;
+
+//Solicitar idade do nadador.
+printf("por favor, digite sua idade:  ");
+scanf("%d", &i);
+printf("idade digitada:  %d \n", i);
+
+//Categorizar
+if(i<=4){
+	printf("infantil A");
+}
+	else{
+		if(i<=7){
+			printf("infatil B");
+		}
+		else{
+			if(i<=10){
+				printf("infantil C");
+			}
+			else{
+				if(i<=13){
+					printf("juvenil A");
+				}
+				else{
+					if(i<=17){
+						printf("juvenil B");
+					}
+					else{
+						if(i>18){
+							printf("adulto");
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	return 0;
+	
+}
