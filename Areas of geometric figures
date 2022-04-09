@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	
+  //Código feito em português
+	//Declarar variávies - (C)írculo, rr - raio, (R)etângulo, mr1 , mr2, (Q)uadrado, l, (T)riângulo, tr1, tr2, (f)igura (g)eométrica;
+	int fg;
+	float rr, mr1, mr2, tr1, tr2, l; 
+	
+	//Recolher dados
+	
+	//Declarar fórmulas e verificar validez
+	
+	//Mostrar resultado
+	printf("Por favor, escolha uma figura geometrica. Considere 1 para circulo, 2 para retangulo, 3 para triangulo, 4 para quadrado:   \n");
+	scanf("%d", &fg);
+	
+	if(fg==1){
+		printf("Por favor, declare a medida do raio:  \n");
+		scanf("%f", &rr);
+		if(rr<=0){
+		printf("Invalido");
+		}
+			else{
+				if(rr>0){
+					printf("Area do circulo %.4f  \n", 3.14159*(rr*rr));
+				}
+			}
+	}
+		else{
+			if(fg==2){
+				printf("Por favor, declare altura:   \n");
+				scanf("%f", &mr1);
+				printf("Por favor, declare base:    \n");
+				scanf("%f", &mr2);
+				if((mr1<=0) || (mr2<=0)){
+					printf("Invalido");
+				}
+				else{
+					if((mr1>0) && mr2>0){
+						printf("Area do retangulo %.4f  \n", (mr1*mr2));
+					}
+				}
+			}		
+			else{
+				if(fg==3){
+					printf("Por favor, declare altura:   \n");
+					scanf("%f", &tr1);
+					printf("Por favor, declare base:   \n");
+					scanf("%f", &tr2);
+					if((tr1<=0) || (tr2<=0)){
+						printf("Invalido");
+					}
+					else{
+						if((tr1>0) && (tr2>0)){
+							printf("Area do triangulo %.4f  \n", (tr1*tr2)/2);
+						}
+					}	
+				}
+				
+				//Atualizar condições de validez do triângulo
+				
+				else{
+					if(fg==4){
+						printf("Por favor, declare lado:   \n");
+						scanf("%f", &l);
+						if(l<=0){
+							printf("Invalido");
+							}
+							else{
+								if(l>0){
+									printf("Area do quadrado %.4f  \n", (l*l));
+								}
+							}
+						}
+					}
+				}
+			}
+return 0;
+		}
