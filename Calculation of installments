@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+  //Código feito em português
+	/*As vendas parceladas se tornaram uma ótima opção para os lojistas que, a cada dia, criam novas promoções para tentar
+conquistar novos clientes. Faça um algoritmo que permita ao lojista informar o preço do produto e receber as seguintes informações:*/
+
+/*a) O valor com 10% de desconto para
+pagamento à vista;
+b) O valor da prestação para parcelamento
+sem juros, em 5x;
+c) O valor da prestação para parcelamento
+com juros, em 10x, com 20% de acréscimo
+no valor do produto.*/
+
+//Declarar variáveis
+float p;
+
+//Informar o preço do produto ao lojista.
+printf("Por favor, informe o valor do produto:   ");
+scanf("%f", &p);
+
+//Calcular preço com 10% de desconto.
+//pp=p-0.01*p;
+
+printf("Com 10 pcento de desconto fica:   %.2f \n", p-0.01*p);
+
+//Calcular o preço dividido por 5.
+printf("Prestaçao para parcelamento sem juros em 5x:   %.2f \n", p/5);
+
+//Calcular o preço com acréscimo de 20% e dividido por 10.
+printf("Prestaçao para parcelamento com 20pcento de juros em 20x:   %.2f \n", (p+0.20*p)/10);
+
+return 0;
+}
