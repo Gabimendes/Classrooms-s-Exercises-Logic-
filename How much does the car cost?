@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+  //Código feito em português	
+	/*O custo ao consumidor de um carro novo é a soma do custo de fábrica com a porcentagem
+do distribuidor e dos impostos (aplicados ao custo de fábrica). Desenvolver um algoritmo
+que calcule o custo ao consumidor de determinado carro.*/
+
+//Declarar variáveis - custo de fabrica: cf, porcentagem do distribuidor: d, porcentagem dos impostos: i, preço final: pf
+
+float cf, d, i, pf;
+
+//Solicitar porcentagens
+printf("por favor, diga-nos a porcentagem do distribuidor:  \n");
+scanf("%f", &d);
+printf("foram registrados %f por cento. \n", d/100);
+printf("por favor, diga-nos a porcentagem dos impostos:  \n");
+scanf("%f", &i);
+printf("foram registrados %f por cento. \n", i/100);
+printf("por favor, diga-nos o custo de fabrica:  \n");
+scanf("%f", &cf);
+printf("foi registrado o custo de fabrica de %f reais. \n", cf);
+
+//Calculo
+printf("custo final = %f reais.", cf+cf*i/100+cf*d/100);
+
+return 0;
+
+}
