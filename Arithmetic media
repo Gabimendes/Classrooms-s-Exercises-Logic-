@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+  //Código feito em português
+	/*Leia 3 números inteiros e faça a média
+		aritmética
+		*/
+	int numqlqr, numqlqr2, numqlqr3;
+	
+	printf("Digite um numero:   ");
+	scanf("%d", &numqlqr);
+	printf("Seu numero: %d\n", numqlqr);
+	
+	printf("Digite um numero:   ");
+	scanf("%d", &numqlqr2);
+	printf("Seu numero: %d\n", numqlqr2);
+	
+	printf("Digite um numero:   ");
+	scanf("%d", &numqlqr3);
+	printf("Seu numero: %d\n", numqlqr3);
+	
+	printf("Media aritmetica: %d", (numqlqr+numqlqr2+numqlqr3)/2);
+
+
+	
+	return 0;
+
+
+
+}
