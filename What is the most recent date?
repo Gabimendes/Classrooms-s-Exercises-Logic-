@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+  //Código feito em português
+	//Declarar variáveis - d1, d2, m1, m2, a1, a2
+	int d1, d2, m1, m2, a1, a2;
+	
+	//Recolher dados (datas)
+	printf("Por favor, insira primeiro dia:   \n");
+	scanf("%d", &d1);
+	printf("Por favor, insira primeiro mês:   \n");
+	scanf("%d", &m1);
+	printf("Por favor, insira primeiro ano:   \n");
+	scanf("%d", &a1);
+	printf("Data inserida: %d - %d - %d \n Por favor, insira segundo dia:   \n", d1, m1, a1);
+	scanf("%d", &d2);
+	printf("Por favor, insira segundo mês:   \n");
+	scanf("%d", &m2);
+	printf("Por favor, insira segundo ano:   \n");
+	scanf("%d", &a2);
+	printf("Data inserida: %d - %d - %d \n", d2, m2, a2);
+	
+	//Verificar ano maior
+	
+	//Se iguais, verificar mês maior
+	
+	//Se iguais, verificar dia maior
+	
+	if((a1>a2) && (a1<=2022)){
+		printf("Primeira data é mais recente");
+	}
+		else{
+			if((a2>a1)&&(a2<=2022)){
+				printf("Segunda data é mais recente");
+			}
+			else{
+				if((a1>2022) || (a2>2022)){
+					printf("Erro");
+				}
+				else{
+					if(a1==a2){
+						printf("Verificando mês...");
+					}
+					else{
+						if((m1>m2) && (m1<=12)){
+							printf("Primeira data é mais recente");
+						}
+						else{
+							if((m2>m1) && (m2<=12)){
+								printf("Segunda data é mais recente");
+							}
+							else{
+								if((m1>12) || (m2>12)){
+									printf("Erro");
+								}
+								else{
+									if(m1==m2){
+										printf("Verificando dia...");
+									}
+									else{
+										if((d1>d2) && (d1<=31)){
+											printf("Primeira data é mais recente");
+										}
+										else{
+											if((d2>d1) && (d2<=31)){
+												printf("Segunda data é mais recente");
+											}
+											else{
+												if((d1>31) && (d2>31)){
+													printf("Erro");
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	
+	return 0;
+
+}
