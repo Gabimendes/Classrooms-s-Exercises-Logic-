@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+  //Código pensado em português
+	/*Desenvolva um algoritmo que calcule o consumo de combustível de um automóvel em determinada viagem. Para isso,
+devem ser obtidos: i) o percurso (em quilômetros) da viagem; ii) o número de quilômetros que o carro percorre com um litro
+de combustível (km/l); e iii) o preço do litro do combustível.*/
+
+/*Ao final, o algoritmo deve determinar:
+• A quantidade de combustível, em litros,
+consumida durante a viagem;
+• O custo total de combustível.*/
+
+//Declarar variáveis - percurso (km), litro (km/l) e preço (moeda)
+float p, l, pr;
+
+//Cálculo da quantidade em litros consumida
+printf("Por favor, digite a quilometragem:   \n");
+scanf("%f", &p);
+printf("Voce dirigiu por %.2f km \n", p);
+printf("Por favor, digite o consumo de litros por km:   \n");
+scanf("%f", &l);
+printf("Voce consumiu %.2f litros no percurso dado. \n", p*l);
+
+//Cálculo do custo total
+printf("Por favor, digite o preço do litro do combustivel:   \n");
+scanf("%f", &pr);
+printf("O valor final foi de:   %f", p*l*pr);
+
+return 0;
+}
