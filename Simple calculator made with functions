@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+	int soma(int n1, int n2){
+	int s;
+	s=n1+n2;
+	return s;
+}
+
+int subtr(int n1, int n2){
+	
+	int subtr;
+	subtr=n1-n2;
+	return subtr;
+}
+
+int multip(n1, n2){
+	
+	int multip;
+	multip=n1*n2;
+	return multip;
+}
+
+int divi(int n1, int n2){
+	
+	int divi;
+	divi=n1/n2;
+	return divi;
+}
+
+void main(){
+	
+	int soma(), subtr(), divi(), multip(), a, b;
+	char op;
+	
+	printf("Entre com uma operacao: +, -, /, *");
+	scanf("%c", &op);
+	printf("\n Voce selecionou %c", op);
+	
+	switch(op){
+		
+		case'+':
+	printf("\nValor de a:  ");
+	scanf("%d", &a);
+	printf("\nValor de b:  ");
+	scanf("%d", &b);
+	printf("\nSoma: %d", soma(a, b));
+	break;
+	
+		case'-':
+	printf("\nValor de a:  ");
+	scanf("%d", &a);
+	printf("\nValor de b:  ");
+	scanf("%d", &b);
+	printf("\nSubtracao: %d", subtr(a, b));
+	break;
+	
+		case'*':
+	printf("\nValor de a:  ");
+	scanf("%d", &a);
+	printf("\nValor de b:  ");
+	scanf("%d", &b);
+	printf("\nMultiplicacao: %d", multip(a, b));
+	break;
+	
+		case'/':
+	printf("\nValor de a:  ");
+	scanf("%d", &a);
+	printf("\nValor de b:  ");
+	scanf("%d", &b);
+	printf("\nDivisao: %d", divi(a, b));
+	break;
+	}
+
+}
+	
